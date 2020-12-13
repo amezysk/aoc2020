@@ -16,6 +16,7 @@ ifstream file;
 string line;
 vector <int> lines;
 vector <int> oneCounts = {0,0,0,0,0,0};
+//x[i] = x[i-1]+x[i-2]+x[i-3]
 int breakdown[6] = {1,2,4,7,13,24}; //checked length of streaks programmatically -max was 3.
 
 file.open("tmp");
